@@ -148,11 +148,11 @@ setInterval(() => {
     chart.update();
   });
 
-  fetch(`https://blynk.cloud/external/api/get?token=${token}&V6`)
+  fetch(`https://blynk.cloud/external/api/get?token=${token}&V0`)
   .then(r=>r.text())
   .then(data=> document.getElementById("s").innerText = data);
 
-  fetch(`https://blynk.cloud/external/api/get?token=${token}&V7`)
+  fetch(`https://blynk.cloud/external/api/get?token=${token}&V3`)
   .then(r=>r.text())
   .then(data=> document.getElementById("st").innerText = data);
 
